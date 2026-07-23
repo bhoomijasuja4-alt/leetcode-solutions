@@ -18,10 +18,14 @@ class Solution {
 
         }
 
-        int mid = count /2;
+        int mid = (count /2)+1;
 
         temp = head;
-        for (int i = 0; i<mid;i++){
+        while (temp!=null){
+            mid = mid-1;
+            if (mid == 0){
+                break;
+            }
             temp = temp.next;
 
         }
