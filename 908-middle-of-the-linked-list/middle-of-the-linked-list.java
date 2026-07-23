@@ -12,25 +12,23 @@ class Solution {
     public ListNode middleNode(ListNode head) {
         ListNode temp = head ;
         int count = 0 ;
-        while(temp!=null){
-            count++;
-            temp = temp.next;
-
+        while ( temp != null){
+            count ++;
+            temp = temp.next ;
         }
 
-        int mid = (count /2)+1;
-
-        temp = head;
-        while (temp!=null){
-            mid = mid-1;
-            if (mid == 0){
-                break;
-            }
+        int mid = (count/2)+1;
+        temp = head ;
+        for ( int i = 1 ; i<mid;i++){
             temp = temp.next;
-
         }
+        
+        
+
+        
+        
+
         return temp;
-
         
     }
 }
