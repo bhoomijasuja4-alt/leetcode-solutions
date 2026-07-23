@@ -19,8 +19,13 @@ class Solution {
 
         int mid = (count/2)+1;
         temp = head ;
-        for ( int i = 1 ; i<mid;i++){
-            temp = temp.next;
+        while(temp!=null){
+            mid --;
+            if(mid == 0){
+                break;
+            }
+           
+            temp=temp.next;
         }
         
         
