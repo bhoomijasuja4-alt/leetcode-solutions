@@ -20,11 +20,11 @@ class Solution {
         int mid = (count/2)+1;
         temp = head ;
         while(temp!=null){
-            mid --;
-            if(mid == 0){
-                break;
+            mid--;
+            if(mid==0){
+            break;
             }
-           
+
             temp=temp.next;
         }
         
